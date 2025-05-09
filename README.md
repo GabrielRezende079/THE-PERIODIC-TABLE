@@ -1,7 +1,7 @@
 
 # 🧪 Tabela Periódica Interativa com HTML e CSS
 
-Este projeto é uma recriação da **Tabela Periódica dos Elementos Químicos**, feita **100% com HTML e CSS puro**, sem o uso de frameworks ou bibliotecas. Cada elemento químico é um link que direciona para sua respectiva página na **Wikipédia**, permitindo fácil acesso a informações detalhadas.
+Este projeto é uma recriação da **Tabela Periódica dos Elementos Químicos**, feita **100% com HTML e CSS**, sem o uso de frameworks ou bibliotecas. Cada elemento químico é um link que direciona para sua respectiva página na **Wikipédia**, permitindo fácil acesso a informações detalhadas.
 
 ## 🔍 Funcionalidades
 
@@ -34,17 +34,4 @@ Veja abaixo uma captura de tela da tabela em funcionamento:
 
 ![Image](https://github.com/user-attachments/assets/bda04e25-7b13-4275-a6f3-312a1f23ca82)
 
-## 📚 Fontes
 
-- [Wikipédia - Tabela Periódica](https://pt.wikipedia.org/wiki/Tabela_peri%C3%B3dica)
-- [IUPAC](https://iupac.org/): Informações oficiais dos elementos químicos.
-
-## 🚀 Possíveis Melhorias
-
-- Adicionar informações ao passar o mouse sobre os elementos.
-- Responsividade aprimorada para celulares.
-- Filtros por categoria (metais, ametais, gases nobres, etc).
-
-## 👨‍💻 Autor
-
-Desenvolvido por [Seu Nome] - [@seu-usuario](https://github.com/seu-usuario)
