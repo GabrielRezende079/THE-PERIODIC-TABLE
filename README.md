@@ -32,7 +32,7 @@ tabela-periodica-html-css/
 
 Veja abaixo uma captura de tela da tabela em funcionamento:
 
-![Tabela Periódica](Screenshot_25.png)
+![Image](https://github.com/user-attachments/assets/bda04e25-7b13-4275-a6f3-312a1f23ca82)
 
 ## 📚 Fontes
 
