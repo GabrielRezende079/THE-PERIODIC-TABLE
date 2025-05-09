@@ -1,0 +1,773 @@
+
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Tabela Periódica</title>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      margin: 20px;
+    }
+    .tabela {
+      display: grid;
+      grid-template-columns: repeat(18, 60px);
+      grid-auto-rows: 80px;
+      gap: 2px;
+      justify-content: center;
+    }
+    .elemento {
+      border: 1px solid #000;
+      padding: 2px;
+      text-align: center;
+      font-size: 11px;
+      cursor: pointer;
+    }
+    .elemento:hover {
+      border: 2px solid #000;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    .alcalino { background-color: #f99; }
+    .alcalino-terroso { background-color: #fbb; }
+    .transicao { background-color: #ffc107; }
+    .metal { background-color: #ccc; }
+    .semi-metal { background-color: #8ef; }
+    .nao-metal { background-color: #8f8; }
+    .halogenio { background-color: #ffb6c1; }
+    .nobre { background-color: #aaf; }
+    .lantanideo { background-color: #e0bbff; }
+    .actinidio { background-color: #ffcccb; }
+    .desconhecido { background-color: #d3d3d3; }
+  </style>
+</head>
+<body>
+<h1>Tabela Periódica</h1>
+<div class="tabela">
+<div class="elemento nao-metal" style="grid-column: 1; grid-row: 1;">
+<a href="https://pt.wikipedia.org/wiki/Hidrog%C3%AAnio" target="_blank">1
+H
+Hidrogênio
+[X]</a>
+</div>
+<div class="elemento nobre" style="grid-column: 18; grid-row: 1;">
+<a href="https://pt.wikipedia.org/wiki/H%C3%A9lio" target="_blank">2
+He
+Hélio
+[X]</a>
+</div>
+<div class="elemento alcalino" style="grid-column: 1; grid-row: 2;">
+<a href="https://pt.wikipedia.org/wiki/L%C3%ADtio" target="_blank">3
+Li
+Lítio
+[X]</a>
+</div>
+<div class="elemento alcalino-terroso" style="grid-column: 2; grid-row: 2;">
+<a href="https://pt.wikipedia.org/wiki/Ber%C3%ADlio" target="_blank">4
+Be
+Berílio
+[X]</a>
+</div>
+<div class="elemento semi-metal" style="grid-column: 13; grid-row: 2;">
+<a href="https://pt.wikipedia.org/wiki/Boro" target="_blank">5
+B
+Boro
+[X]</a>
+</div>
+<div class="elemento nao-metal" style="grid-column: 14; grid-row: 2;">
+<a href="https://pt.wikipedia.org/wiki/Carbono" target="_blank">6
+C
+Carbono
+[X]</a>
+</div>
+<div class="elemento nao-metal" style="grid-column: 15; grid-row: 2;">
+<a href="https://pt.wikipedia.org/wiki/Nitrog%C3%AAnio" target="_blank">7
+N
+Nitrogênio
+[X]</a>
+</div>
+<div class="elemento nao-metal" style="grid-column: 16; grid-row: 2;">
+<a href="https://pt.wikipedia.org/wiki/Oxig%C3%AAnio" target="_blank">8
+O
+Oxigênio
+[X]</a>
+</div>
+<div class="elemento halogenio" style="grid-column: 17; grid-row: 2;">
+<a href="https://pt.wikipedia.org/wiki/Fl%C3%BAor" target="_blank">9
+F
+Flúor
+[X]</a>
+</div>
+<div class="elemento nobre" style="grid-column: 18; grid-row: 2;">
+<a href="https://pt.wikipedia.org/wiki/Ne%C3%B4nio" target="_blank">10
+Ne
+Neônio
+[X]</a>
+</div>
+<div class="elemento alcalino" style="grid-column: 1; grid-row: 3;">
+<a href="https://pt.wikipedia.org/wiki/S%C3%B3dio" target="_blank">11
+Na
+Sódio
+[X]</a>
+</div>
+<div class="elemento alcalino-terroso" style="grid-column: 2; grid-row: 3;">
+<a href="https://pt.wikipedia.org/wiki/Magn%C3%A9sio" target="_blank">12
+Mg
+Magnésio
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 13; grid-row: 3;">
+<a href="https://pt.wikipedia.org/wiki/Alum%C3%ADnio" target="_blank">13
+Al
+Alumínio
+[X]</a>
+</div>
+<div class="elemento semi-metal" style="grid-column: 14; grid-row: 3;">
+<a href="https://pt.wikipedia.org/wiki/Sil%C3%ADcio" target="_blank">14
+Si
+Silício
+[X]</a>
+</div>
+<div class="elemento nao-metal" style="grid-column: 15; grid-row: 3;">
+<a href="https://pt.wikipedia.org/wiki/F%C3%B3sforo" target="_blank">15
+P
+Fósforo
+[X]</a>
+</div>
+<div class="elemento nao-metal" style="grid-column: 16; grid-row: 3;">
+<a href="https://pt.wikipedia.org/wiki/Enxofre" target="_blank">16
+S
+Enxofre
+[X]</a>
+</div>
+<div class="elemento halogenio" style="grid-column: 17; grid-row: 3;">
+<a href="https://pt.wikipedia.org/wiki/Cloro" target="_blank">17
+Cl
+Cloro
+[X]</a>
+</div>
+<div class="elemento nobre" style="grid-column: 18; grid-row: 3;">
+<a href="https://pt.wikipedia.org/wiki/Arg%C3%B4nio" target="_blank">18
+Ar
+Argônio
+[X]</a>
+</div>
+<div class="elemento alcalino" style="grid-column: 1; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/Pot%C3%A1ssio" target="_blank">19
+K
+Potássio
+[X]</a>
+</div>
+<div class="elemento alcalino-terroso" style="grid-column: 2; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/C%C3%A1lcio" target="_blank">20
+Ca
+Cálcio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 3; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/Esc%C3%A2ndio" target="_blank">21
+Sc
+Escândio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 4; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/Tit%C3%A2nio" target="_blank">22
+Ti
+Titânio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 5; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/Van%C3%A1dio" target="_blank">23
+V
+Vanádio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 6; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/Cr%C3%B4mio" target="_blank">24
+Cr
+Crômio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 7; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/Mangan%C3%AAs" target="_blank">25
+Mn
+Manganês
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 8; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/Ferro" target="_blank">26
+Fe
+Ferro
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 9; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/Cobalto" target="_blank">27
+Co
+Cobalto
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 10; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/N%C3%ADquel" target="_blank">28
+Ni
+Níquel
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 11; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/Cobre" target="_blank">29
+Cu
+Cobre
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 12; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/Zinco" target="_blank">30
+Zn
+Zinco
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 14; grid-row: 2;">
+<a href="https://pt.wikipedia.org/wiki/G%C3%A1lio" target="_blank">31
+Ga
+Gálio
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 15; grid-row: 2;">
+<a href="https://pt.wikipedia.org/wiki/Germ%C3%A2nio" target="_blank">32
+Ge
+Germânio
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 16; grid-row: 2;">
+<a href="https://pt.wikipedia.org/wiki/Ars%C3%AAnio" target="_blank">33
+As
+Arsênio
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 17; grid-row: 2;">
+<a href="https://pt.wikipedia.org/wiki/Sel%C3%AAnio" target="_blank">34
+Se
+Selênio
+[X]</a>
+</div>
+<div class="elemento nobre" style="grid-column: 18; grid-row: 2;">
+<a href="https://pt.wikipedia.org/wiki/Bromo" target="_blank">35
+Br
+Bromo
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 1; grid-row: 2;">
+<a href="https://pt.wikipedia.org/wiki/Cript%C3%B4nio" target="_blank">36
+Kr
+Criptônio
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 2; grid-row: 3;">
+<a href="https://pt.wikipedia.org/wiki/Rub%C3%ADdio" target="_blank">37
+Rb
+Rubídio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 3; grid-row: 3;">
+<a href="https://pt.wikipedia.org/wiki/Estr%C3%B4ncio" target="_blank">38
+Sr
+Estrôncio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 4; grid-row: 3;">
+<a href="https://pt.wikipedia.org/wiki/%C3%8Dtrio" target="_blank">39
+Y
+Ítrio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 5; grid-row: 3;">
+<a href="https://pt.wikipedia.org/wiki/Zirc%C3%B4nio" target="_blank">40
+Zr
+Zircônio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 6; grid-row: 3;">
+<a href="https://pt.wikipedia.org/wiki/Ni%C3%B3bio" target="_blank">41
+Nb
+Nióbio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 7; grid-row: 3;">
+<a href="https://pt.wikipedia.org/wiki/Molibd%C3%AAnio" target="_blank">42
+Mo
+Molibdênio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 8; grid-row: 3;">
+<a href="https://pt.wikipedia.org/wiki/Tecn%C3%A9cio" target="_blank">43
+Tc
+Tecnécio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 9; grid-row: 3;">
+<a href="https://pt.wikipedia.org/wiki/Rut%C3%AAnio" target="_blank">44
+Ru
+Rutênio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 10; grid-row: 3;">
+<a href="https://pt.wikipedia.org/wiki/R%C3%B3dio" target="_blank">45
+Rh
+Ródio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 11; grid-row: 3;">
+<a href="https://pt.wikipedia.org/wiki/Pal%C3%A1dio" target="_blank">46
+Pd
+Paládio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 12; grid-row: 3;">
+<a href="https://pt.wikipedia.org/wiki/Prata" target="_blank">47
+Ag
+Prata
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 13; grid-row: 3;">
+<a href="https://pt.wikipedia.org/wiki/C%C3%A1dmio" target="_blank">48
+Cd
+Cádmio
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 14; grid-row: 3;">
+<a href="https://pt.wikipedia.org/wiki/%C3%8Dndio" target="_blank">49
+In
+Índio
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 15; grid-row: 3;">
+<a href="https://pt.wikipedia.org/wiki/Estanho" target="_blank">50
+Sn
+Estanho
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 16; grid-row: 3;">
+<a href="https://pt.wikipedia.org/wiki/Antim%C3%B4nio" target="_blank">51
+Sb
+Antimônio
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 17; grid-row: 3;">
+<a href="https://pt.wikipedia.org/wiki/Tel%C3%BArio" target="_blank">52
+Te
+Telúrio
+[X]</a>
+</div>
+<div class="elemento nobre" style="grid-column: 18; grid-row: 3;">
+<a href="https://pt.wikipedia.org/wiki/Iodo" target="_blank">53
+I
+Iodo
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 1; grid-row: 3;">
+<a href="https://pt.wikipedia.org/wiki/Xen%C3%B4nio" target="_blank">54
+Xe
+Xenônio
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 2; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/C%C3%A9sio" target="_blank">55
+Cs
+Césio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 3; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/B%C3%A1rio" target="_blank">56
+Ba
+Bário
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 4; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/Lant%C3%A2nio" target="_blank">57
+La
+Lantânio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 5; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/C%C3%A9rio" target="_blank">58
+Ce
+Cério
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 6; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/Praseod%C3%ADmio" target="_blank">59
+Pr
+Praseodímio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 7; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/Neod%C3%ADmio" target="_blank">60
+Nd
+Neodímio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 8; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/Prom%C3%A9cio" target="_blank">61
+Pm
+Promécio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 9; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/Sam%C3%A1rio" target="_blank">62
+Sm
+Samário
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 10; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/Eur%C3%B3pio" target="_blank">63
+Eu
+Európio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 11; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/Gadol%C3%ADnio" target="_blank">64
+Gd
+Gadolínio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 12; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/T%C3%A9rbio" target="_blank">65
+Tb
+Térbio
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 13; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/Dispr%C3%B3sio" target="_blank">66
+Dy
+Disprósio
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 14; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/H%C3%B3lmio" target="_blank">67
+Ho
+Hólmio
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 15; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/%C3%89rbio" target="_blank">68
+Er
+Érbio
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 16; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/T%C3%BAlio" target="_blank">69
+Tm
+Túlio
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 17; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/It%C3%A9rbio" target="_blank">70
+Yb
+Itérbio
+[X]</a>
+</div>
+<div class="elemento nobre" style="grid-column: 18; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/Lut%C3%A9cio" target="_blank">71
+Lu
+Lutécio
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 1; grid-row: 4;">
+<a href="https://pt.wikipedia.org/wiki/H%C3%A1fnio" target="_blank">72
+Hf
+Háfnio
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 2; grid-row: 5;">
+<a href="https://pt.wikipedia.org/wiki/T%C3%A2ntalo" target="_blank">73
+Ta
+Tântalo
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 3; grid-row: 5;">
+<a href="https://pt.wikipedia.org/wiki/Tungst%C3%AAnio" target="_blank">74
+W
+Tungstênio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 4; grid-row: 5;">
+<a href="https://pt.wikipedia.org/wiki/R%C3%AAnio" target="_blank">75
+Re
+Rênio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 5; grid-row: 5;">
+<a href="https://pt.wikipedia.org/wiki/%C3%93smio" target="_blank">76
+Os
+Ósmio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 6; grid-row: 5;">
+<a href="https://pt.wikipedia.org/wiki/Ir%C3%ADdio" target="_blank">77
+Ir
+Irídio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 7; grid-row: 5;">
+<a href="https://pt.wikipedia.org/wiki/Platina" target="_blank">78
+Pt
+Platina
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 8; grid-row: 5;">
+<a href="https://pt.wikipedia.org/wiki/Ouro" target="_blank">79
+Au
+Ouro
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 9; grid-row: 5;">
+<a href="https://pt.wikipedia.org/wiki/Merc%C3%BArio" target="_blank">80
+Hg
+Mercúrio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 10; grid-row: 5;">
+<a href="https://pt.wikipedia.org/wiki/T%C3%A1lio" target="_blank">81
+Tl
+Tálio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 11; grid-row: 5;">
+<a href="https://pt.wikipedia.org/wiki/Chumbo" target="_blank">82
+Pb
+Chumbo
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 12; grid-row: 5;">
+<a href="https://pt.wikipedia.org/wiki/Bismuto" target="_blank">83
+Bi
+Bismuto
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 13; grid-row: 5;">
+<a href="https://pt.wikipedia.org/wiki/Pol%C3%B4nio" target="_blank">84
+Po
+Polônio
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 14; grid-row: 5;">
+<a href="https://pt.wikipedia.org/wiki/Astato" target="_blank">85
+At
+Astato
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 15; grid-row: 5;">
+<a href="https://pt.wikipedia.org/wiki/Rad%C3%B4nio" target="_blank">86
+Rn
+Radônio
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 16; grid-row: 5;">
+<a href="https://pt.wikipedia.org/wiki/Fr%C3%A2ncio" target="_blank">87
+Fr
+Frâncio
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 17; grid-row: 5;">
+<a href="https://pt.wikipedia.org/wiki/R%C3%A1dio" target="_blank">88
+Ra
+Rádio
+[X]</a>
+</div>
+<div class="elemento nobre" style="grid-column: 18; grid-row: 5;">
+<a href="https://pt.wikipedia.org/wiki/Act%C3%ADnio" target="_blank">89
+Ac
+Actínio
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 1; grid-row: 5;">
+<a href="https://pt.wikipedia.org/wiki/T%C3%B3rio" target="_blank">90
+Th
+Tório
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 2; grid-row: 6;">
+<a href="https://pt.wikipedia.org/wiki/Protact%C3%ADnio" target="_blank">91
+Pa
+Protactínio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 3; grid-row: 6;">
+<a href="https://pt.wikipedia.org/wiki/Ur%C3%A2nio" target="_blank">92
+U
+Urânio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 4; grid-row: 6;">
+<a href="https://pt.wikipedia.org/wiki/Net%C3%BAnio" target="_blank">93
+Np
+Netúnio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 5; grid-row: 6;">
+<a href="https://pt.wikipedia.org/wiki/Plut%C3%B4nio" target="_blank">94
+Pu
+Plutônio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 6; grid-row: 6;">
+<a href="https://pt.wikipedia.org/wiki/Amer%C3%ADcio" target="_blank">95
+Am
+Amerício
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 7; grid-row: 6;">
+<a href="https://pt.wikipedia.org/wiki/C%C3%BArio" target="_blank">96
+Cm
+Cúrio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 8; grid-row: 6;">
+<a href="https://pt.wikipedia.org/wiki/Berqu%C3%A9lio" target="_blank">97
+Bk
+Berquélio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 9; grid-row: 6;">
+<a href="https://pt.wikipedia.org/wiki/Calif%C3%B3rnio" target="_blank">98
+Cf
+Califórnio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 10; grid-row: 6;">
+<a href="https://pt.wikipedia.org/wiki/Einst%C3%AAnio" target="_blank">99
+Es
+Einstênio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 11; grid-row: 6;">
+<a href="https://pt.wikipedia.org/wiki/F%C3%A9rmio" target="_blank">100
+Fm
+Férmio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 12; grid-row: 6;">
+<a href="https://pt.wikipedia.org/wiki/Mendel%C3%A9vio" target="_blank">101
+Md
+Mendelévio
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 13; grid-row: 6;">
+<a href="https://pt.wikipedia.org/wiki/Nob%C3%A9lio" target="_blank">102
+No
+Nobélio
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 14; grid-row: 6;">
+<a href="https://pt.wikipedia.org/wiki/Laur%C3%AAncio" target="_blank">103
+Lr
+Laurêncio
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 15; grid-row: 6;">
+<a href="https://pt.wikipedia.org/wiki/Rutherf%C3%B3rdio" target="_blank">104
+Rf
+Rutherfórdio
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 16; grid-row: 6;">
+<a href="https://pt.wikipedia.org/wiki/D%C3%BAbnio" target="_blank">105
+Db
+Dúbnio
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 17; grid-row: 6;">
+<a href="https://pt.wikipedia.org/wiki/Seab%C3%B3rgio" target="_blank">106
+Sg
+Seabórgio
+[X]</a>
+</div>
+<div class="elemento nobre" style="grid-column: 18; grid-row: 6;">
+<a href="https://pt.wikipedia.org/wiki/B%C3%B3hrio" target="_blank">107
+Bh
+Bóhrio
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 1; grid-row: 6;">
+<a href="https://pt.wikipedia.org/wiki/H%C3%A1ssio" target="_blank">108
+Hs
+Hássio
+[X]</a>
+</div>
+<div class="elemento metal" style="grid-column: 2; grid-row: 7;">
+<a href="https://pt.wikipedia.org/wiki/Meitn%C3%A9rio" target="_blank">109
+Mt
+Meitnério
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 3; grid-row: 7;">
+<a href="https://pt.wikipedia.org/wiki/Darmst%C3%A1dio" target="_blank">110
+Ds
+Darmstádio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 4; grid-row: 7;">
+<a href="https://pt.wikipedia.org/wiki/Roentg%C3%AAnio" target="_blank">111
+Rg
+Roentgênio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 5; grid-row: 7;">
+<a href="https://pt.wikipedia.org/wiki/Copern%C3%ADcio" target="_blank">112
+Cn
+Copernício
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 6; grid-row: 7;">
+<a href="https://pt.wikipedia.org/wiki/Nih%C3%B4nio" target="_blank">113
+Nh
+Nihônio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 7; grid-row: 7;">
+<a href="https://pt.wikipedia.org/wiki/Fler%C3%B3vio" target="_blank">114
+Fl
+Fleróvio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 8; grid-row: 7;">
+<a href="https://pt.wikipedia.org/wiki/Mosc%C3%B3vio" target="_blank">115
+Mc
+Moscóvio
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 9; grid-row: 7;">
+<a href="https://pt.wikipedia.org/wiki/Liverm%C3%B3rio" target="_blank">116
+Lv
+Livermório
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 10; grid-row: 7;">
+<a href="https://pt.wikipedia.org/wiki/Tenessino" target="_blank">117
+Ts
+Tenessino
+[X]</a>
+</div>
+<div class="elemento transicao" style="grid-column: 11; grid-row: 7;">
+<a href="https://pt.wikipedia.org/wiki/Oganess%C3%B4nio" target="_blank">118
+Og
+Oganessônio
+[X]</a>
+</div>
+</div>
+<div style="margin-top: 40px; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
