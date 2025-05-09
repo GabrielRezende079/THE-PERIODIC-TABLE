@@ -16,17 +16,7 @@ Este projeto é uma recriação da **Tabela Periódica dos Elementos Químicos**
    ```bash
    git clone https://github.com/seu-usuario/tabela-periodica-html-css.git
    ```
-2. Abra o arquivo `index.html` com seu navegador favorito.
-
-## 🧱 Estrutura do Projeto
-
-```
-tabela-periodica-html-css/
-│
-├── index.html         # Estrutura principal da tabela
-├── style.css          # Estilização com CSS puro
-└── Screenshot_25.png  # Pré-visualização do projeto
-```
+2. Abra o arquivo `index.html` com seu navegador.
 
 ## 📸 Pré-visualização
 
